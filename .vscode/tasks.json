@@ -3,8 +3,12 @@
   "tasks": [
     {
       "label": "Git Auto Push",
-      "type": "shell",
-      "command": "git add . && git commit -m \"Auto Save\" && git push",
+      "type": "process",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "git add . && git commit -m AutoSave && git push"
+      ],
       "problemMatcher": []
     }
   ]
